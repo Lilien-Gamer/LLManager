@@ -1,6 +1,6 @@
 # LLManager
 My games about
-说明：该框架为轻量级个人框架。本人编码该框架时大四，学识浅薄，未曾系统学习以及参考网络资料，诸多遗漏与缺陷还请见谅。
+#说明：该框架为轻量级个人框架。本人编码该框架时大四，学识浅薄，未曾系统学习以及参考网络资料，诸多遗漏与缺陷还请见谅。
 
 1. 除了Editor文件夹 其余文件夹都放置Scripts下
 2. excel配置表放置在 Assets/Configs下
@@ -23,10 +23,15 @@ Event:事件系统相关代码
 ModelBase:暂时无用
 Resource:资源相关
 （1）ConstConfig：一些配置信息，此时已有UI预制体的路径配置
+
 （2）GameObjectPoor：Go对象的对象池，因为Go不能new，所以单独区别ObjectPool
+
 （3）GoPoolManager：存有多个Go对象池的manager
+
 （4）ObjectPool：一般可以直接new出来的对象的对象池
+
 （5）ResourceManager：加载资源，存储资源，使用Resources.Load等api，暂时无卸载资源
+
 UI:
 （1）ItemView：与其他代码无耦合，点看查看源码根据需求是否适用。
 （2）MyLoopList:用于解决滚动视图中，复用子Go，以及解决布局带来的消耗，自写的工具类，具体说明看源码内注释，以及TestLoopList。
